@@ -76,11 +76,7 @@ npm run build
 
 ### 主题配置
 
-主题颜色和其他配置可以在 `src/utils/baseConfig.js` 文件中修改。
-
-### API配置
-
-API基础URL可以在 `src/utils/baseConfig.js` 文件中修改。
+主题颜色、API和其他配置可以在 `src/config` 下文件中修改。
 
 ## 浏览器支持
 
