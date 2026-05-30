@@ -198,9 +198,9 @@ export const CUSTOM_HEADERS_CONFIG = mergeDeep(DEFAULT_CUSTOM_HEADERS_CONFIG, ge
 
 // 网站名称配置
 const DEFAULT_SITE_CONFIG = {
-    siteName: 'EZ THEME',
-    siteDescription: 'EZ UI',
-    copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
+    siteName: 'Yoimiya',
+    siteDescription: 'Yoimiya UI',
+    copyright: `© ${new Date().getFullYear()} Yoimiya. All Rights Reserved.`,
 
     // 是否显示标题中的网站Logo (true=显示, false=隐藏)
     showLogo: true,
@@ -232,7 +232,7 @@ const DEFAULT_BASE_CONFIG = {
     defaultTheme: 'dark',
 
     // 主题色 (16进制颜色值) TODO
-    primaryColor: '#00947c',
+    primaryColor: '#2C6B74',
 
     // 是否启用落地页 (true=启用, false=禁用) TODO
     enableLandingPage: true

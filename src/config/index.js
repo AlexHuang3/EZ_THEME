@@ -64,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
-        siteDescription: 'EZ UI',
+        siteName: 'Yoimiya',
+        siteDescription: 'Yoimiya UI',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} Yoimiya. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
@@ -99,7 +99,7 @@ export const config  = {
         defaultTheme: 'light',
 
         // 主题色 (16进制颜色值)
-        primaryColor: '#355cc2',
+        primaryColor: '#2C6B74',
 
         // 是否启用落地页 (true=启用, false=禁用)
         enableLandingPage: true // 默认启用
