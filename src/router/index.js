@@ -1,4 +1,4 @@
-﻿
+
 
 import { createRouter, createWebHashHistory } from 'vue-router';
 
@@ -689,15 +689,13 @@ router.beforeEach(async (to, from, next) => {
     if (to.meta.titleKey) {
 
       try {
-
         const title = i18n.global.t(to.meta.titleKey);
-
+        if (title === to.meta.titleKey) {
+          return SITE_CONFIG.siteName;
+        }
         return `${title} - ${SITE_CONFIG.siteName}`;
-
       } catch (error) {
-
         return SITE_CONFIG.siteName;
-
       }
 
     }

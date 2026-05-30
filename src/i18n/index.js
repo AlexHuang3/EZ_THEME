@@ -1,4 +1,4 @@
-﻿
+
 
 import { createI18n } from 'vue-i18n';
 
@@ -344,15 +344,14 @@ export const updatePageTitle = () => {
     const titleKey = window.router.currentRoute.value.meta.titleKey;
 
     try {
-
       const translatedTitle = i18n.global.t(titleKey);
-
-      document.title = `${translatedTitle} - ${SITE_CONFIG.siteName}`;
-
+      if (translatedTitle === titleKey) {
+        document.title = SITE_CONFIG.siteName;
+      } else {
+        document.title = `${translatedTitle} - ${SITE_CONFIG.siteName}`;
+      }
     } catch (error) {
-
       document.title = SITE_CONFIG.siteName;
-
     }
 
   } else if (window.router?.currentRoute?.value) {
