@@ -6,7 +6,7 @@
 
 export const config  = {
     // 面板类型配置 - 请选择您使用的面板类型
-    PANEL_TYPE: 'Xiao-V2board', // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
+    PANEL_TYPE: 'Xboard', // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
     // 说明:
     // 1. V2board: 标准V2board面板，使用默认请求格式
     // 2. Xiao-V2board: Xiao修改版面板，使用特殊格式的请求参数
@@ -20,18 +20,16 @@ export const config  = {
     // 2. 自动获取: 从当前域名自动生成API基础URL
     API_CONFIG: {
         // API URL获取方式: 'static'=使用静态URL, 'auto'=自动从当前域名获取
-        urlMode: 'static',
+        urlMode: 'auto',
       
         // 是否展示后端联通性检测
-        showCheckBackend: false,
+        showCheckBackend: true,
       
         // 静态URL模式下的基础URL (urlMode = 'static'时使用)
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            'https://ss.yoimiya.org/api/v1',
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -281,12 +279,12 @@ export const config  = {
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
-            linux: 'https://github.com/xxx/releases/latest',
-            openwrt: 'https://github.com/xxx/releases/latest'
+            ios: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC',
+            android: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC',
+            macos: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC',
+            windows: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC',
+            linux: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC',
+            openwrt: 'https://1drv.ms/f/c/ede46bf559eeb819/IgBk1PJV8g5HSLmvE2CFdCJiAb1tcByOccsDkbG5KpgOfCg?e=csjvVC'
         },
 
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
@@ -346,13 +344,15 @@ export const config  = {
     // 安全配置 (仅包含前端域名授权开关，有利于保护您的主题不被别人窃取)
     SECURITY_CONFIG: {
         // 是否启用前端域名验证（前端域名检查，防止未授权域名访问）
-        enableFrontendDomainCheck: false
+        enableFrontendDomainCheck: true
     },
 
     // 授权的前端域名列表 (新增)
     AUTHORIZED_DOMAINS: [
-        "test.eztheme.test",
-        "test1.eztheme.test",
+        "ss.yoimiya.org",
+        "star.yoimiya.org",
+        "chicago.yoimiya.org",
+        "star.honkai.us"
     ],
 
     // 验证码配置
