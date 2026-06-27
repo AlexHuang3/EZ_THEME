@@ -1,4 +1,4 @@
-﻿<template>
+<template>
 
   <div class="docs-container">
 
@@ -367,21 +367,14 @@ const fetchKnowledge = async () => {
 
 
   try {
-
-    const result = await fetchKnowledgeList(locale.value);
-
+    // 强制请求中文文档 (zh-CN)
+    const result = await fetchKnowledgeList('zh-CN');
     
-
     if (result && result.data) {
-
       documents.value = result.data;
-
     } else {
-
       documents.value = {};
-
     }
-
   } catch (err) {
 
     console.error('Failed to fetch knowledge list:', err);

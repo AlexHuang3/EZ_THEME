@@ -1,4 +1,4 @@
-﻿<template>
+<template>
 
   <div class="doc-detail-container">
 
@@ -1182,23 +1182,17 @@ const fetchDocDetail = async () => {
 
 
   try {
-
-    const result = await fetchKnowledgeDetail(docId, locale.value);
-
-    
+    // 强制请求中文文档 (zh-CN)
+    let result = await fetchKnowledgeDetail(docId, 'zh-CN');
 
     if (result && result.data) {
-
       docData.value = result.data;
-
       
-
       if (!docData.value.body && docData.value.content) {
 
         docData.value.body = docData.value.content;
 
       }
-
     } else {
 
       throw new Error(t('docs.docNotFound'));

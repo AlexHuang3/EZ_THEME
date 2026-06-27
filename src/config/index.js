@@ -64,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: '星空联盟',
-        siteDescription: '星空联盟 UI',
+        siteName: 'Honkai Alliance',
+        siteDescription: 'Honkai Alliance UI',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} 星空联盟. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} Honkai Alliance. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
